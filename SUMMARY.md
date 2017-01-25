@@ -1,6 +1,6 @@
 # Summary
 
-* [doslife](doslife.md)
+* [doslife](README.md)
 * [alias](alias.md)
 * [doskey /macrofile](doskey-macrofile.md)
 
