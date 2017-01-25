@@ -40,14 +40,14 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 `$b find /v "ボリューム"` …findstrの結果をパイプでfindに渡して「"ボリューム”を含む行」を除きます。
 `$b find /v "のファイル" $b find /v "のディレクトリ"` …同様に「"のファイル”を含む行」「"のディレクトリ”を含む行」を除きます。
 
-1. `pwd=echo %CD%` ![pwd](pwd.png)
+1. `pwd=echo %CD%` ![pwd](/assets/pwd.png)
 現在のディレクトリを表示する。
 > $pwd
 > D:\home\sample
 
  図3:pwdの実行結果
 
-1. `mv=move $*` ![mv](mv.png)
+1. `mv=move $*` ![mv](/assets/mv.png)
 ファイルを移動およびファイルとディレクトリ名を変更します。
 > $ls
 > [.]      [..]     aa.txt   bb.txt
@@ -60,7 +60,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図4:mvの実行結果
 
-1. `cp=copy $*` ![cp](cp.png)
+1. `cp=copy $*` ![cp](/assets/cp.png)
 1つまたは複数のファイルを別の場所にコピーします。
 > $ls
 > [.]      [..]     bb.txt   cc.txt
@@ -78,7 +78,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図5:cpの実行結果
 
-1. `rm=del $*` ![rm](rm.png)
+1. `rm=del $*` ![rm](/assets/rm.png)
 ファイル (複数可) を削除します。
 > $ls
 > [.]      [..]     bb.txt   cc.txt
@@ -90,7 +90,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図6:cpの実行結果
 
-1. `touch=break $g $*` ![touch](touch.png)
+1. `touch=break $g $*` ![touch](/assets/touch.png)
 ファイルのアクセス時刻と修正時刻を変更する 。空ファイルを作るときに便利。
 [コード解説]
 `break` …Windows 上では何も効果はありません。DOS システムとの互換性を維持するために用意されています。
@@ -105,7 +105,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図7:touchの実行結果
 
-1. `vim=copy /y con $1 $b find /v "のファイルをコピーしました"` ![vim](vim.png)
+1. `vim=copy /y con $1 $b find /v "のファイルをコピーしました"` ![vim](/assets/vim.png)
 ファイルを編集する、もどき。コンソールの入力をパラメータに指定したファイルへ保存する。Ctrl+zで入力を終わる。
 [コード解説]
 `copy /y con $1` …copyのyオプションは受け側の既存のファイルを上書きする前に確認のメッセージを表示しません。conはキーボードからの入力。
@@ -118,7 +118,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図8:vimの実行結果
 
-1. `find=where /r $1 $2` ![find](find.png)
+1. `find=where /r $1 $2` ![find](/assets/find.png)
 指定したディレクトリ配下から検索パターンに一致するファイルの場所を表示します。
 > $find . *.txt
 > D:\home\sample\bb.txt
@@ -127,7 +127,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図9:findの実行結果
 
-1. cdをバッチファイルとして作成したうえで`cd=cd.cmd` ![cd](cd.png)
+1. cdをバッチファイルとして作成したうえで`cd=cd.cmd` ![cd](/assets/cd.png)
 バッチで作る目的はつぎの三つ。
  - `pushd` との置き換え
  - `cd -` のサポート( `popd` との置き換え)
@@ -160,7 +160,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図10:cdの実行結果
 
-1. sudoをバッチファイルとして作成したうえで`sudo=sudo.cmd` ![sudo](sudo.png)
+1. sudoをバッチファイルとして作成したうえで`sudo=sudo.cmd` ![sudo](/assets/sudo.png)
 バッチで作る目的はただ一つ。
  - `runas`の使い勝手が悪いから。
 
@@ -173,7 +173,7 @@ Win7、Vista、たぶんXPでも動くようになるべくPowerShellは使わ�
 
  図11:sudoの実行結果
 
-1. tailをバッチファイルとして作成したうえで`tail=tail.cmd` ![tail](tail.png)
+1. tailをバッチファイルとして作成したうえで`tail=tail.cmd` ![tail](/assets/tail.png)
 バッチで作る目的はただ一つ。
  - `tail`に該当するコマンドが標準ではないから（除くPowerShell）。
 
