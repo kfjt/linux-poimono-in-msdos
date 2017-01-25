@@ -1,4 +1,4 @@
-1. `ls=dir /d /on $* $b findstr . $b find /v "ボリューム" $b find /v "のファイル" $b find /v "のディレクトリ"` ![](/assets/pwd.png)  
+1. `ls=dir /d /on $* $b findstr . $b find /v "ボリューム" $b find /v "のファイル" $b find /v "のディレクトリ"` ![](/assets/ls.png)  
    ディレクトリ中のファイルとサブディレクトリを一覧表示します。  
    \[コード解説\]  
    `ls=dir /d /on $*` …エイリアスを作ります、lsの引数をdirにすべて渡すキーワードが$\*です。  
